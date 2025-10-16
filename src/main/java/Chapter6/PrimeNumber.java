@@ -7,7 +7,7 @@ public class PrimeNumber {
         Scanner input = new Scanner(System.in);
         number = number;
 
-        if(number % 1 == 0 && number % 2 != 0 && number % 3 != 0 && number % 5 != 0){
+        if(number % 2 != 0 && number % 3 != 0){
             System.out.println("true");
             return true;
         }else {
@@ -17,6 +17,6 @@ public class PrimeNumber {
     }
 
     public static void main(String[] args) {
-        isPrime(21);
+        isPrime(4);
     }
 }
