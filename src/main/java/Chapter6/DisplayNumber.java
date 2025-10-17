@@ -6,7 +6,7 @@ public class DisplayNumber {
     public static String squarial (String numbers){
         for (char i = 0; i < numbers.length(); i++) {
             char x = numbers.charAt(i);
-            System.out.printf("%c     ", x);
+            System.out.printf("%c   ", x);
         }
         return numbers;
     }

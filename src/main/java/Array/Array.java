@@ -35,16 +35,4 @@ public class Array {
         System.out.println(Arrays.toString(x));
         return z;
     }
-
-    public static void main(String[] args) {
-        int [] y = new int [100];
-        System.out.println(Arrays.toString(populateArray(y)));
-        System.out.println();
-        System.out.println(array());
-        System.out.println();
-        State[] x = new State[2];
-        System.out.println(Arrays.toString(states(x)));
-        System.out.println();
-        System.out.println(Arrays.toString(multiple()));
-    }
 }
