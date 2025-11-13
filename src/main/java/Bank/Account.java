@@ -51,11 +51,6 @@ public class Account {
                     + getBalance());
         }
     }
-    public void transfer(double transferAmount){
-        if (transferAmount > 0.0) {
-            balance = balance - transferAmount;
-        }
-    }
 
     public void setType(TYPE type){
         this.type = type;

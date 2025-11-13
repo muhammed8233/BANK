@@ -7,6 +7,7 @@ public class Array {
         for(int i = 0; i < x.length; i++){
             x[i] = i;
         }
+
         return x;
     }
 

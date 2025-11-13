@@ -3,6 +3,7 @@ package Bank;
 public class Bank {
     private String createAccount;
     private double balance;
+    private double transfer;
 
     Account account = new Account();
 
@@ -36,7 +37,10 @@ public class Bank {
     }
 
     public void transfer(double transferAmount){
-
+        if (transferAmount > 0.0) {
+            balance = balance - transferAmount;
+            System.out.println(transferAmount + " have been transfer successfully to " + getCreateAccount());
+        }
     }
 
     public void setBalance(double balance) {

@@ -3,20 +3,31 @@ package Chapter6;
 import java.util.Scanner;
 
 public class PrimeNumber {
-    public static boolean isPrime(int number){
-        Scanner input = new Scanner(System.in);
-        number = number;
+    public static boolean Prime(int number){
+       boolean isPrime = true;
 
-        if(number % 2 != 0 && number % 3 != 0){
+
+       if (number <= 1) {
+           isPrime = false;
+           System.out.println("false");
+       }else {
+           for(int i = 2; i < number / 2; i++) {
+               if (number % i == 0) {
+                   isPrime = false;
+                   System.out.println("false");
+                   break;
+               }
+           }
+       }
+        if(isPrime){
             System.out.println("true");
-            return true;
-        }else {
-            System.out.println("false");
-            return false;
         }
+        return isPrime;
     }
 
     public static void main(String[] args) {
-        isPrime(4);
+        Scanner input = new Scanner(System.in);
+        int number = input.nextInt();
+        Prime(number);
     }
 }

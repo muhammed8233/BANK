@@ -9,7 +9,7 @@ class PrimeNumberTest {
 
     @Test
     void testToCheckIfNumberEnterIsPrime() {
-     boolean result =    number.isPrime(5);
-        assertFalse(result);
+     boolean result = PrimeNumber.Prime(2);
+        assertTrue(result);
     }
 }

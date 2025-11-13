@@ -48,6 +48,21 @@ public class Main {
                 System.out.println();
 
             }else if (user == 4) {
+                System.out.println("Enter transfer Account");
+                System.out.println("""
+                        1 transfer to account1
+                        2 transfer to account2
+                        """);
+                int select = input.nextInt();
+                if(select == 1){
+                    System.out.println("Enter amount to transfer");
+                    bank.transfer(input.nextDouble());
+
+                }else
+                    if(select == 2){
+                    System.out.println("Enter amount to transfer");
+                    bank.transfer(input.nextDouble());
+                }
 
             } else if (user == 5) {
                 System.out.println("your account balance is: $" + account.getBalance());
